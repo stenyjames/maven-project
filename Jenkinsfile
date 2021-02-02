@@ -1,5 +1,5 @@
-node("docker") {
-    
+
+node("master") {    
     stage("Git checkout") {
         commit_details = checkout scm
         version = commit_details.GIT_COMMIT
