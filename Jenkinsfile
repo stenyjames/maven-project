@@ -1,4 +1,4 @@
-node("docker") {
+node("master") {
     
     stage("Git checkout") {
         commit_details = checkout scm
